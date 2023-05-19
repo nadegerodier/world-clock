@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
-    <h1>World Clock</h1>
     <div class="container">
+      <h1>World Clock</h1>
       <select name="" id="">
         <option value="">Select a city</option>
         <option value="">London</option>
@@ -17,16 +25,28 @@
         <option value="">Paris</option>
       </select>
 
-      <div>
-        <h2>Los Angeles</h2>
-        <div>August 15, 2022</div>
-        <div>1:48:15 PM</div>
+      <div class="city">
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">August 15, 2022</div>
+        </div>
+        <div class="time">1:48:15 <small>PM</small></div>
       </div>
 
-      <div>
-        <h2>Sydney</h2>
-        <div>August 15, 2022</div>
-        <div>1:48:15 PM</div>
+      <div class="city">
+        <div>
+          <h2>Sydney</h2>
+          <div class="date">August 15, 2022</div>
+        </div>
+        <div class="time">1:48:15 <small>PM</small></div>
+      </div>
+
+      <div class="city">
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date">August 15, 2022</div>
+        </div>
+        <div class="time">1:48:15 <small>PM</small></div>
       </div>
     </div>
     <footer>
