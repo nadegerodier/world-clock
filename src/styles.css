@@ -40,18 +40,18 @@ h2 {
 }
 
 footer {
-  color: #fcf8f3;
-  font-size: 16px;
+  color: #fffdfb;
+  font-size: 18px;
   text-align: center;
 }
 
 footer a {
-  color: #fcf8f3;
+  color: #fffdfb;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #f8e6b9;
+  color: #b35db951;
 }
 
 .container {
