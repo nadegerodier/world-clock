@@ -103,3 +103,17 @@ footer a:hover {
   color: #b35db9d0;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .time {
+    font-size: 36px;
+  }
+
+  .time small {
+    font-size: 22px;
+  }
+}
