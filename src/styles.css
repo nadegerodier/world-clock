@@ -130,7 +130,7 @@ footer a:hover {
 
 @media (max-width: 380px) {
   .container {
-    margin-top: 20px;
+    margin: 20px 10px 10px;
   }
 
   h1 {
