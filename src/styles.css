@@ -26,6 +26,15 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 80px auto 20px;
+  max-width: 650px;
+  padding: 20px 20px;
+}
+
 h1 {
   color: #ab80ad;
   font-size: 48px;
@@ -45,31 +54,6 @@ h2 {
   font-size: 32px;
   line-height: 1.5;
   margin: 0;
-}
-
-footer {
-  color: var(--off-white);
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-footer a {
-  color: var(--off-white);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #b35db977;
-}
-
-.container {
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 80px auto 20px;
-  max-width: 650px;
-  padding: 20px 20px;
 }
 
 .city {
@@ -106,17 +90,33 @@ footer a:hover {
   text-decoration: none;
 }
 
+footer {
+  color: var(--off-white);
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b35db977;
+}
+
 @media (max-width: 768px) {
+  .container {
+    margin: 50px 10px 20px;
+  }
+
   h1 {
     font-size: 42px;
   }
 
   h2 {
     font-size: 22px;
-  }
-
-  .container {
-    margin: 50px 10px 20px;
   }
 
   .time {
