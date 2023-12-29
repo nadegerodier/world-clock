@@ -53,11 +53,12 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
-  padding: 15px 0 20px;
+  padding: 10px 0 25px;
 }
 
 .city:last-child {
   border: none;
+  padding: 10px 0 10px;
 }
 
 .date {
