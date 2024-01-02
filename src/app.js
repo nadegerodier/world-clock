@@ -10,7 +10,7 @@ function updateData(city, timeZone) {
   }
 }
 
-function updateTime() {
+function findTimeZone() {
   updateData("los-angeles", "America/Los_Angeles");
   updateData("sydney", "Australia/Sydney");
   updateData("tokyo", "Asia/Tokyo");
@@ -45,5 +45,5 @@ function updateCity(event) {
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
 
-updateTime();
-setInterval(updateTime, 1000);
+findTimeZone();
+setInterval(findTimeZone, 1000);
