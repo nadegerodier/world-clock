@@ -1,21 +1,3 @@
-function updateData(city, timeZone) {
-  let cityElement = document.getElementById(city);
-  if (cityElement) {
-    let dateElement = cityElement.querySelector(".date");
-    let timeElement = cityElement.querySelector(".time");
-    dateElement.innerHTML = moment().tz(timeZone).format("MMMM D, YYYY");
-    timeElement.innerHTML = moment()
-      .tz(timeZone)
-      .format("h:mm:ss [<small>]A[</small>]");
-  }
-}
-
-function findTimeZone() {
-  updateData("los-angeles", "America/Los_Angeles");
-  updateData("sydney", "Australia/Sydney");
-  updateData("tokyo", "Asia/Tokyo");
-}
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -44,6 +26,24 @@ function updateCity(event) {
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
+
+function updateData(city, timeZone) {
+  let cityElement = document.getElementById(city);
+  if (cityElement) {
+    let dateElement = cityElement.querySelector(".date");
+    let timeElement = cityElement.querySelector(".time");
+    dateElement.innerHTML = moment().tz(timeZone).format("MMMM D, YYYY");
+    timeElement.innerHTML = moment()
+      .tz(timeZone)
+      .format("h:mm:ss [<small>]A[</small>]");
+  }
+}
+
+function findTimeZone() {
+  updateData("los-angeles", "America/Los_Angeles");
+  updateData("sydney", "Australia/Sydney");
+  updateData("tokyo", "Asia/Tokyo");
+}
 
 findTimeZone();
 setInterval(findTimeZone, 1000);
